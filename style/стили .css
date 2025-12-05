@@ -1,0 +1,341 @@
+/* ----------всплывающие окна---------- */
+#app .modal-container-wrapper {
+  border: 0;
+  background: linear-gradient(45deg, #0303034e);
+  box-shadow: none;
+  transform: scale(.8);
+  border-radius: 2vh;
+}
+
+#app .modal-container {
+  border: none;
+  background: 0 0;
+}
+
+#app .modal__pattern-wrapper,
+#app .inventory-main__after,
+#app .inventory-main__before {
+  display: none;
+}
+
+#app .modal__title {
+  font-family: "Open Sans", var(--fallback-font);
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 2vh;
+  border-bottom: 1px solid #0303034e;
+  padding-bottom: 1.5vh;
+}
+
+/* ----------окна всякие--------- */
+#app .window-table__item {
+  height: 4.3vh;
+  color: #fff;
+  border-radius: 2vh;
+  border: none;
+  background: #0303034e;
+  box-shadow: none;
+  transition: .25s;
+}
+
+#app .input-field_hoverable:hover,
+#app .window-table__item:hover {
+  background: #0303034e;
+}
+
+#app .window-table__item.selected {
+  background: #fff;
+  color: #0303034e;
+  transition: .25s;
+}
+
+#app .window-table__col {
+  font-size: 1.55vh;
+}
+
+/* ---------- Активные элементы / админ-меню ---------- */
+#app .admin-menu__item.active .text,
+#app .window-table__item.selected .window-table__col p,
+.admin-menu__item.active:hover .text {
+  color: #0303034e !important;
+}
+
+/* ---------- Взаимодействие игрока---------- */
+#app .player-interaction__title,
+.player-interaction__title_active {
+  color: #fff !important;
+}
+#app .input-field {
+  border: none;
+  background: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  transition: .25s;
+/* ---------- Чат---------- */
+#app .radmir-chat-input__input input {
+    color: #fff !important
+}
+
+#app .radmir-chat-input__input-lang {
+    padding: 0 .463vh .3704vh;
+    color: #fff !important;
+    border-left: .18vh solid #0303034e
+}
+
+#app .radmir-chat:before {
+    width: 70vw !important;
+    background: linear-gradient(148deg, #0303034e 10%, #0303034e 50%) !important
+}
+
+#app .radmir-chat-input__input {
+    border-radius: .8333vh;
+    background-color: #0303034e;
+    border: .18vh solid #cdcdcd;
+    padding: 0 .93vh !important
+}
+
+#app .radmir-chat_inactive {
+    opacity: 1 !important
+}
+
+/* ---------- Админка---------- */
+#app .admin-menu__item.active,
+.admin-menu__item.active:hover {
+  background: #fff !important;
+}
+
+#app .admin-bottom__tabs .tab.active,
+body .admin-bottom__tabs .tab:hover {
+  background: #fff !important;
+  color: #0303034e;
+}
+
+.admin-menu__item.active svg,
+.admin-menu__item.active:hover img,
+.admin-menu__item.active:hover svg .admin-menu__item.active img {
+  fill: #0303034e !important;
+}
+
+/* ---------- Админ-инфо / данные ---------- */
+#app .admin-bottom__data .data-name .id {
+  background: #0303034e;
+  color: #fff;
+}
+
+#app .admin-info__head .data-meta {
+  color: silver;
+}
+#app .controls-button {
+  border-radius: .5vh;
+}
+
+/* ---------- Инвентарь---------- */
+#app .inventory-extra__container,
+#app .inventory-main {
+  padding: 2vh;
+  background: rgba(0, 0, 0, 0.395)
+  border-radius: 1.1vh;
+  border: 0;
+}
+
+#app .inventory-player {
+  border: none;
+}
+
+#app .inventory-extra {
+  margin-bottom: 0;
+}
+
+#app .inventory__container,
+#app .inventory__controls {
+  justify-content: center;
+}
+
+#app .inventory-capacity,
+#app .inventory-container__box {
+  border-radius: .8vh;
+  border: .1vh solid #0303034e;
+  background: radial-gradient(#00000003, #0303034e 150%);
+}
+
+#app .inventory-container__slot {
+  border-radius: .8vh;
+  background: radial-gradient(#00000003, #0303034e);
+}
+
+#app .inventory-capacity__bar__fill,
+#app .inventory-wear__bar__fill {
+  border-radius: 1vh;
+}
+
+#app .inventory-wear__bar {
+  bottom: .8vh;
+}
+
+#app .inventory-extra__content {
+  padding-bottom: .833vw;
+}
+
+#app .inventory-container__slot:before {
+  border-radius: .8vh;
+  border: .1vh solid #f4f1e1;
+  background: radial-gradient(#00000003, #ffffffcc 150%);
+}
+
+.inventory-container__info__container {
+  border: none !important;
+  padding-top: .8vh !important;
+  background: rgba(0, 0, 0, 0.578) !important;
+  border-radius: 1.1vh !important;
+  overflow: hidden;
+}
+
+.inventory-item-value,
+.inventory-wear {
+  height: 4vh !important;
+  border-radius: .8vh !important;
+  border: .1vh solid #0303034e !important;
+  background: radial-gradient(#00000003, #0303034e) !important;
+}
+
+#app .inventory-action__modal {
+  padding: 2vh;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 1.1vh;
+}
+
+#app .inventory-action__item__icon {
+  border-radius: .8vh;
+}
+
+#app .inventory-wear__content {
+  margin: .5vh 1vh 0;
+}
+
+#app .inventory-item-value {
+  padding: 0 2vh;
+}
+
+#app .inventory-container__count,
+#app .inventory-container__slot-image {
+  z-index: 1;
+}
+
+#app .inventory-container__actions {
+  border-bottom-left-radius: .8vh;
+  border-bottom-right-radius: .8vh;
+  overflow: hidden;
+}
+
+/* ---------- Взаимодействие с игроком---------- */
+#app .player-interaction__inner {
+  background: #0303034e;
+  border: .09vh solid #0000008c;
+}
+
+#app .player-interaction-favorite,
+#app .player-interaction-layer,
+#app .player-interaction__container {
+  background: rgba(0, 0, 0, 0.39);
+}
+
+#app .info-card,
+#app .info-card__data {
+  background: rgba(0, 0, 0, 0.33);
+}
+
+#app .player-interaction__icon,
+.player-interaction__icon_active {
+  fill: white !important;
+}
+
+.player-interaction__container::after,
+.player-interaction__container::before {
+  display: none !important;
+}
+
+#app .player-interaction-favorite:hover {
+  background: rgba(0, 0, 0, 0.38);
+}
+
+#app .info-card__data {
+  border-radius: 31px;
+}
+
+#app .info-card .text {
+  color: #cfcfcf;
+}
+
+/* ----------табло капта---------- */
+#app .capture-table {
+  background: #0303034e;
+  box-shadow: 0 0 5vh 0 #0303034e;
+  border-radius: 1vh;
+  transform: scale(.9);
+  padding: 1.5vh 1.8vh;
+}
+
+#app .capture-table__col-kills,
+#app .capture-table__col-kills.my,
+#app .capture-table__timer {
+  background: #0303034e;
+  color: #fff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.8vh;
+  font-family: 'GothamPro Bold';
+  border-radius: .5vh;
+}
+
+#app .capture-table {
+    background: #0303034e;
+    box-shadow: 0 0 5vh 0 #0303034e;
+    border-radius: 1vh;
+    transform: scale(.9);
+    padding: 1.5vh 1.8vh;
+}
+
+#app .capture-table__col-kills,
+#app .capture-table__col-kills.my,
+#app .capture-table__timer {
+    background: #0303034e;
+    color: #fff;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.8vh;
+    font-family: 'GothamPro Bold';
+    border-radius: .5vh;
+}
+
+#app .capture-table__timer {
+    width: 7.5vh;
+    height: 3.7vh;
+}
+
+#app .capture-table__col-kills {
+    margin: 0;
+    width: 3.5vh;
+    height: 3.5vh;
+}
+
+#app .capture-table__col .name {
+    font-family: 'GothamPro Bold';
+    font-style: normal;
+    font-weight: 700;
+    text-transform: none;
+}
+
+#app .capture-table__col-kills.my {
+    margin-right: 1.3vh;
+    margin-left: 0 !important;
+    background: none;
+}
+
+#app .capture-table__col-kills {
+    margin-left: 1.3vh;
+    background: none;
+
+}
+#app .radmir-chat_opened .radmir-chat__before { opacity: .5 !important; }
+#app .radmir-chat-input__input { background: rgb(0 0 0 / 80%) !important; border-radius: 11px !important; }
